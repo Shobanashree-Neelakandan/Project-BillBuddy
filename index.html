@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="landing">
+        <div class="landing-nav">
+            <div class="land-logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+
+            <div class="landing-list">
+                <ul>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">All Bills</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Help & Support</a></li>
+                </ul>
+            </div>
+            <div class="landing-profile">
+                <i class="fa-regular fa-circle-user"></i>
+                <p>My Profile</p>
+            </div>
+        </div>
+        <div class="landing-content">
+            <span>SMARTER BILL MANAGEMENT</span>
+            <h1>Take Control of your <br> Bills & Subscriptions.</h1>
+            <p>Manage your bills and subscriptions in one place. Stay organized, <br> keep track of due dates, and never lose sight of an upcoming payment.</p>
+            <button type="button" id="land-button">Get Started <i class="fa-solid fa-square-arrow-up-right"></i></button>
+        </div>
+    </div> -->
+
+    <div class="billbuddy">
+
+        <!-- left nav bar -->
+
+        <div class="left-nav">
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+                <!-- <p id="vertical-nav">></p> -->
+                <i class="fa-solid fa-bars" id="toggle"></i>
+            </div>
+            <div class="media-nav" id="medianav">
+                <div class="nav-list" id="navlist">
+                    <ul>
+                        <p>MAIN MENU</p>
+                        <li><a href=""><i class="fa-regular fa-house"></i> Dashboard</a></li>
+                        <li><a href=#billdash><i class="fa-solid fa-file-invoice"></i> All Bills</a></li>
+                        <li><a href=""><i class="fa-solid fa-chart-line"></i> Reports</a></li>
+
+                        <p id="pre">PREFERENCES</p>
+                        <li><a href=""><i class="fa-solid fa-gear"></i> Settings</a></li>
+                        <li><a href=""><i class="fa-regular fa-circle-question"></i> Help & Support</a></li>
+                        <span></span>
+                    </ul>
+                </div>
+                <div class="border" id="brdr"></div>
+                <div class="profile" id="pro">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <p>My Profile</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-nav">
+
+            <div class="right-top">
+                <p>Dashboard</p>
+                <div class="top-icon">
+                    <div class="top-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="" id="navsearch" placeholder="Search here">
+                    </div>
+                    <i class="fa-regular fa-bell" id="bell"></i>
+                    <div class="usertop">
+                        <i class="fa-regular fa-circle-user" id="user"></i>
+                        <div class="user-icon" id="usericon">
+                            <div class="user-pro">
+                                <i class="fa-regular fa-circle-user"></i> 
+                                <div class="user-flex">
+                                    <span>Profile</span>
+                                    <p>Name, Account</p>
+                                </div>
+                            </div>
+                            
+                            <p><i class="fa-solid fa-lock"></i> Privacy</p>
+                            <p><i class="fa-solid fa-circle-info"></i> Help & Feedback</p>
+                            <p><i class="fa-solid fa-right-from-bracket"></i> Logout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="landing-content">
+
+                <span>SMARTER BILL MANAGEMENT</span>
+                <h1>Take Control of your <br> Bills & Subscriptions.</h1>
+                <p>Manage your bills and subscriptions in one place. Stay organized, <br> keep track of due dates, and
+                    never lose sight of an upcoming payment.</p>
+                <button type="button" id="land-button"> <a href=#billc>Get Started <i
+                            class="fa-solid fa-square-arrow-up-right"></i></a> </button>
+            </div>
+
+            <div class="bill-cards" id="billc">
+                <div class="second-title">
+                    <div class="sec-left">
+                        <span>DASHBOARD / OVERVIEW</span>
+                        <h1>Welcome Back!</h1>
+                        <p>Keep your bills organized and stay on top of payments.</p>
+                    </div>
+                </div>
+                <div class="four-card">
+                    <div class="card-1">
+                        <div class="card-bottom">
+                            <i class="fa-solid fa-wallet" id="wallet"></i>
+                            <p id="need">Need Attention</p>
+                        </div>
+                        <span class="total-pending">0</span>
+                        <p>Total <br> Pendings</p>
+                    </div>
+
+                    <div class="card-1">
+                        <div class="card-bottom">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="pending" id="">Pending</p>
+                        </div>
+                        <span class="pending-count">0</span>
+                        <p>Due Soon</p>
+                    </div>
+
+                    <div class="card-1">
+                        <div class="card-bottom">
+                            <i class="fa-regular fa-square-check"></i>
+                            <p class="complete">Completed</p>
+                        </div>
+                        <span class="paid-count">0</span>
+                        <p>Bill Paid</p>
+                    </div>
+
+                    <div class="card-1">
+                        <div class="card-bottom">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="overd">Overdue</p>
+                        </div>
+                        <span class="overdue-count">0</span>
+                        <p>Overdue</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bills" id="billdash">
+
+                <div class="bill-title">
+                    <div class="bill-head">
+                        <span>PAYMENT MANAGEMENT</span>
+                        <h1>All Bills & Subscriptions</h1>
+                        <p>Manage and Monitor your payments.</p>
+                    </div>
+                    <div class="add-new">
+                        <button type="button">+ Add Bill</button>
+                    </div>
+                </div>
+
+                <div class="bill-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="searchbill" placeholder="Search here">
+                </div>
+                <!-- <p id="no-result" style="display: none;">No matching results found.</p> -->
+
+                <div class="bill-filter">
+                    <p class="filter-button active" data-status="All">All Bills</p>
+                    <p class="filter-button" data-status="Pending">Pending</p>
+                    <p class="filter-button" data-status="Paid">Paid</p>
+                    <p class="filter-button" data-status="Overdue">Overdue</p>
+                </div>
+
+                <p id="no-result" style="display: none;">No matching results found.</p>
+
+                <table class="bill-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="bill-table">
+
+                        <!-- <!-- <tr>
+                            <td>
+                                <div class="bill-details">
+                                    <span>Electric</span>
+                                    <p>Utilities</p>
+                                </div>
+                            </td>
+                            <td><Span>1,500</Span></td>
+                            <td><Span>Oct 20</Span></td>
+                            <td><span class="pending">Pending</span></td>
+                        </tr> -->
+                        <!-- <tr>
+                            <td>
+                                <div class="bill-details">
+                                    <span>Internet Bill</span>
+                                    <p>Utilities</p>
+                                </div>
+                            </td>
+                            <td><Span>1,500</Span></td>
+                            <td><Span>Oct 20</Span></td>
+                            <td><span class="active">Active</span></td>
+                        </tr> -->
+                        <!-- <tr>
+                            <td>
+                                <div class="bill-details">
+                                    <span>Netflix</span>
+                                    <p>Entertain</p>
+                                </div>
+                            </td>
+                            <td><Span>1,500</Span></td>
+                            <td><Span>Oct 20</Span></td>
+                            <td><span class="overd">Overdue</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="bill-details">
+                                    <span>Netflix</span>
+                                    <p>Entertain</p>
+                                </div>
+                            </td>
+                            <td><Span>1,500</Span></td>
+                            <td><Span>Oct 20</Span></td>
+                            <td><span class="complete">Paid</span></td>
+                        </tr> -->
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="form">
+                <div class="form-title">
+                    <h1 class="add-new">Add New Bill</h1>
+                    <p>Record a bill and track its new date.</p>
+                </div>
+
+                <form action="" id="form-bill">
+
+                    <div class="form-name">
+                        <div class="f-name">
+                            <label for="">Bill Name</label><br>
+                            <input type="text" name="" id="billname" placeholder="Enter your bill name" required>
+                        </div>
+                        <div class="f-category">
+                            <label for="">Category</label><br>
+                            <select name="" id="billcategory">
+                                <option value="">Select Category</option>
+                                <option value="Utilities">Utilities</option>
+                                <option value="Telecom">Telecom</option>
+                                <option value="Entertainment">Entertain</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-amt">
+                        <div class="f-amt">
+                            <label for="">Amount(in rs.)</label><br>
+                            <input type="number" name="" id="billamount" placeholder="0.00" required>
+                        </div>
+                        <div class="f-pay">
+                            <label for="">Payment Status</label><br>
+                            <select name="" id="billstatus">
+                                <option value="">Select Category</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Paid">Paid</option>
+                                <option value="Active">Active</option>
+                                <option value="Overdue">Overdue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-due">
+                        <div class="f-date">
+                            <label for="">Due Date</label><br>
+                            <input type="date" name="" id="billdate" required>
+                        </div>
+                        <div class="f-time">
+                            <label for="">Note</label><br>
+                            <textarea name="" id="billnotes"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-save">
+                        <button type="submit" class="save">Save Bill</button>
+                        <!-- <button type="button" class="cancel">Cancel</button> -->
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="./script.js"></script>
+        <!-- <script>
+            let toggle = document.querySelector("#toggle")
+            let navbar = document.querySelector("#medianav")
+
+            toggle.onclick = () => {
+                navbar.classList.toggle("active")
+            }
+
+            let landing = document.querySelector("#land-button")
+            let billbuddy = document.querySelector(".billbuddy")
+
+            landing.onclick = () => {
+                billbuddy.classList.add("active")
+                billbuddy.scrollIntoView({
+                    behavior: "smooth"
+                })
+            }
+        </script> -->
+</body>
+
+</html>
