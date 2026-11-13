@@ -47,6 +47,64 @@ searchBill.oninput = ()=>{
     noResult.style.display = match ? "none": "block";
 
 }
+
+
+// Landing page search
+
+// Landing page search
+
+let navsearch = document.querySelector("#navsearch");
+
+navsearch.oninput = () => {
+
+    let searchValue = navsearch.value.toLowerCase();
+
+    let tablerow = billTable.querySelectorAll("tr");
+
+    let noResult = document.querySelector("#no-result");
+    let match = false;
+
+    tablerow.forEach((row) => {
+
+        let rowtext = row.textContent.toLowerCase();
+
+        if (rowtext.includes(searchValue)) {
+            row.style.display = "";
+            match = true;
+        }
+        else {
+            row.style.display = "none";
+        }
+
+    });
+
+    noResult.style.display = match ? "none" : "block";
+
+};
+
+
+// Enter key navigation
+
+navsearch.onkeydown = (e) => {
+
+    if (e.key === "Enter") {
+
+        let searchValue = navsearch.value.trim();
+
+        if (searchValue !== "") {
+
+            // Navigate to Bills page
+            document.querySelector("#bills").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+
+};
+
+
 // form bill
 
 let billform = document.querySelector("#form-bill")
