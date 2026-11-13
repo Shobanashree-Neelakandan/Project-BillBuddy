@@ -676,6 +676,7 @@ textarea::placeholder{
     background-color: #6910ee;
     transform: translateY(-8px);
 }
+
 /* media response */
 
 @media (min-width:280px) and (max-width:780px){
