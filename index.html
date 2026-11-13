@@ -68,7 +68,7 @@
                     <ul>
                         <p>MAIN MENU</p>
                         <li><a href=""><i class="fa-regular fa-house"></i> Dashboard</a></li>
-                        <li><a href=#billdash><i class="fa-solid fa-file-invoice"></i> All Bills</a></li>
+                        <li><a href=#bills><i class="fa-solid fa-file-invoice"></i> All Bills</a></li>
                         <li><a href=""><i class="fa-solid fa-chart-line"></i> Reports</a></li>
 
                         <p id="pre">PREFERENCES</p>
@@ -91,6 +91,7 @@
                 <p>Dashboard</p>
                 <div class="top-icon">
                     <div class="top-search">
+                        
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" name="" id="navsearch" placeholder="Search here">
                     </div>
@@ -172,7 +173,7 @@
                 </div>
             </div>
 
-            <div class="bills" id="billdash">
+            <div class="bills" id="bills">
 
                 <div class="bill-title">
                     <div class="bill-head">
@@ -212,41 +213,7 @@
 
                     <tbody id="bill-table">
 
-                        <!-- <!-- <tr>
-                            <td>
-                                <div class="bill-details">
-                                    <span>Electric</span>
-                                    <p>Utilities</p>
-                                </div>
-                            </td>
-                            <td><Span>1,500</Span></td>
-                            <td><Span>Oct 20</Span></td>
-                            <td><span class="pending">Pending</span></td>
-                        </tr> -->
                         <!-- <tr>
-                            <td>
-                                <div class="bill-details">
-                                    <span>Internet Bill</span>
-                                    <p>Utilities</p>
-                                </div>
-                            </td>
-                            <td><Span>1,500</Span></td>
-                            <td><Span>Oct 20</Span></td>
-                            <td><span class="active">Active</span></td>
-                        </tr> -->
-                        <!-- <tr>
-                            <td>
-                                <div class="bill-details">
-                                    <span>Netflix</span>
-                                    <p>Entertain</p>
-                                </div>
-                            </td>
-                            <td><Span>1,500</Span></td>
-                            <td><Span>Oct 20</Span></td>
-                            <td><span class="overd">Overdue</span></td>
-                        </tr>
-
-                        <tr>
                             <td>
                                 <div class="bill-details">
                                     <span>Netflix</span>
@@ -256,7 +223,7 @@
                             <td><Span>1,500</Span></td>
                             <td><Span>Oct 20</Span></td>
                             <td><span class="complete">Paid</span></td>
-                        </tr> -->
+                        </tr> --> 
                     </tbody>
 
                 </table>
@@ -332,24 +299,7 @@
 
 
         <script src="./script.js"></script>
-        <!-- <script>
-            let toggle = document.querySelector("#toggle")
-            let navbar = document.querySelector("#medianav")
-
-            toggle.onclick = () => {
-                navbar.classList.toggle("active")
-            }
-
-            let landing = document.querySelector("#land-button")
-            let billbuddy = document.querySelector(".billbuddy")
-
-            landing.onclick = () => {
-                billbuddy.classList.add("active")
-                billbuddy.scrollIntoView({
-                    behavior: "smooth"
-                })
-            }
-        </script> -->
+       
 </body>
 
 </html>
